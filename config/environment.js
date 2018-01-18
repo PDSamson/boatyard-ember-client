@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   'use strict';
-  const ENV = {
+  var ENV = {
     modulePrefix: 'Boatyard-ember-client',
     environment: environment,
     rootURL: '/',
@@ -50,9 +50,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/<boatyard-ember-client>';
+    ENV.rootURL = '/boatyard-ember-client';
     ENV.locationType = 'hash';
-    ENV.apiHost = '<https://tranquil-hollows-10511.herokuapp.com/>'
+    ENV.apiHost = 'https://tranquil-hollows-10511.herokuapp.com/'
   }
 
   return ENV;
