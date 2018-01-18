@@ -1,0 +1,9 @@
+<h2>Boats</h2>
+
+{{boat-form createBoat='createBoat'}}
+
+{{#each model as |boat|}}
+  <h3>Name: {{boat.name}}</h3>
+  <p>Length: {{boat.length}} MakeAndModel: {{boat.make}} Year: {{boat.year}}</p>
+  <p>Owner:{{boat.ownerName}} Contact: {{boat.ownerPhone}}, {{boat.ownerEmail}}</p>
+{{/each}}
