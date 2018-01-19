@@ -8,6 +8,10 @@ export default Ember.Route.extend({
     createBoat(boat) {
       let newBoat = this.get('store').createRecord('boat', boat);
       newBoat.save()
+    },
+    deleteBoat(boat) {
+      boat.deleteRecord();
+      boat.save()
     }
   }
 });
