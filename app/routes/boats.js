@@ -20,8 +20,8 @@ export default Ember.Route.extend({
     },
     updateBoat(boat) {
       boat.save()
-      .then(() => this.get('flashMessages').success('Boat Successfully Updated'))
-      .catch(() => this.get('flashMessages').danger('Update Failed'));
+        .then(() => this.get('flashMessages').success('Boat Successfully Updated'))
+        .catch(() => this.get('flashMessages').danger('Update Failed'));
     }
   }
 });
