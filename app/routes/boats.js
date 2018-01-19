@@ -13,8 +13,7 @@ export default Ember.Route.extend({
       .catch(() => this.get('flashMessages').danger('Boat Not Created'));
     },
     deleteBoat(boat) {
-      boat.deleteRecord();
-      boat.save()
+      boat.destroyRecord()
         .then(() => this.get('flashMessages').success('Boat Successfully Deleted'))
         .catch(() => this.get('flashMessages').danger('Delete Failed'));
     },
