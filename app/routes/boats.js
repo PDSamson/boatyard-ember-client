@@ -12,6 +12,9 @@ export default Ember.Route.extend({
     deleteBoat(boat) {
       boat.deleteRecord();
       boat.save()
+    },
+    updateBoat(boat) {
+      boat.save()
     }
   }
 });
