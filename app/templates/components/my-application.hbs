@@ -28,5 +28,10 @@
 {{/each}}
 
 <div class="col-md-8 col-md-offset-2">
+{{#if isAuthenticated}}
+  {{#link-to "boats"}}View Boats{{/link-to}}
+  {{else}}
+  <p>Sign in to view boats</p>
+  {{/if}}
   {{outlet}}
 </div>

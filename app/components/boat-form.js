@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  auth: Ember.inject.service(),
   newBoat: {
     name: null,
     ownerName: null,

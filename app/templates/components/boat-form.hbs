@@ -1,3 +1,4 @@
+{{#if auth.isAuthenticated}}
 <h3>Add a new boat</h3>
 <form {{action 'createBoat' on='submit'}}>
   {{input placeholder='Name' value=newBoat.name}}
@@ -10,3 +11,4 @@
   {{input placeholder='Year Built' value=newBoat.year}}
   <button type='submit'>Save</button>
 </form>
+{{/if}}
