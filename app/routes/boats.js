@@ -9,9 +9,10 @@ export default Ember.Route.extend({
     createBoat(boat) {
       let newBoat = this.get('store').createRecord('boat', boat);
       newBoat.save()
-      .then(() => this.get('flashMessages').success('Boat Successfully Created'))
-      .catch(() => this.get('flashMessages').danger('Boat Not Created'));
+        .then(() => this.get('flashMessages').success('Boat Successfully Created'))
+        .catch(() => this.get('flashMessages').danger('Boat Not Created'));
     },
+
     deleteBoat(boat) {
       boat.destroyRecord()
         .then(() => this.get('flashMessages').success('Boat Successfully Deleted'))
