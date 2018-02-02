@@ -1,2 +1,5 @@
 {{#link-to "boats"}} Go back to boats {{/link-to}}
 <h1>{{model.name}}</h1>
+{{#each model.projects as |project|}}
+  <h2>{{project.taskTitle}}</h2>
+{{/each}}
