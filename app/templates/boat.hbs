@@ -1,5 +1,12 @@
 {{#link-to "boats"}} Go back to boats {{/link-to}}
 <h1>{{model.name}}</h1>
 {{#each model.projects as |project|}}
-  <h2>{{project.taskTitle}}</h2>
+  <div class="project">
+    <h4>Project: </h4><p>{{project.taskTitle}}</p>
+    <p>{{project.description}}</p>
+    <h4>Contractor: </h4><p>{{project.contractor}}</p>
+    <h4>Bid: </h4><p>${{project.bid}}</p>
+    <h4>Payment: </h4><p>{{project.payment}}</p>
+    <h4>Completion Date: </h4><p>{{project.completionDate}}</p>
+  </div>
 {{/each}}
