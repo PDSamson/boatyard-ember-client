@@ -10,5 +10,6 @@ export default DS.Model.extend({
   make: DS.attr('string'),
   year: DS.attr('number'),
   stored: DS.attr('boolean'),
-  user: DS.belongsTo('user')
+  user: DS.belongsTo('user'),
+  projects: DS.hasMany('project')
 });
