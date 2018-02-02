@@ -6,6 +6,7 @@
   <h3>Name: {{boat.name}}</h3>
   <p>Type: {{boat.boatType}} Length: {{boat.length}} MakeAndModel: {{boat.make}} Year: {{boat.year}}</p>
   <p>Owner:{{boat.ownerName}} Contact: {{boat.ownerPhone}}, {{boat.ownerEmail}}</p>
+  {{#link-to "boat" boat}} See Details {{/link-to}}
   <button {{action "deleteBoat" boat}}>DELETE RECORD</button>
   {{boat-edit-form boat=boat updateBoat='updateBoat'}}
 {{/each}}
