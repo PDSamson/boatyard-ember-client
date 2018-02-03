@@ -1,0 +1,10 @@
+<h3>Add a new project for {{boat.name}}</h3>
+<form {{action 'createProject' boat on='submit'}}>
+  {{input placeholder='Project Title' value=newProject.taskTitle}}
+  {{input placeholder='Description' value=newProject.description}}
+  {{input placeholder='Contractor' value=newProject.contractor}}
+  {{input placeholder='Bid ($)' value=newProject.bid}}
+  {{input placeholder='Payment ($)' value=newProject.payment}}
+  {{input placeholder='Completion Date' type="date" value=newProject.completionDate}}
+  <button type='submit'>Save</button>
+</form>

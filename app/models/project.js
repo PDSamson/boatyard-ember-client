@@ -7,5 +7,5 @@ export default DS.Model.extend({
   bid: DS.attr('number'),
   completionDate: DS.attr('date'),
   payment: DS.attr('number'),
-  boatId: DS.belongsTo('boat')
+  boat: DS.belongsTo('boat')
 });
