@@ -10,6 +10,11 @@ export default Ember.Route.extend({
      newProject.save()
         .then(() => this.get('flashMessages').success('Project Successfully Created'))
         .catch(() => this.get('flashMessages').danger('Project Not Created'));
+    },
+    deleteProject(project) {
+      project.destroyRecord()
+        .then(() => this.get('flashMessages').success('Project Successfully Deleted'))
+        .catch(() => this.get('flashMessages').danger('Delete Failed'));
     }
   }
 });
