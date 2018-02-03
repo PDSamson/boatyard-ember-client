@@ -9,5 +9,6 @@
     <h4>Bid: </h4><p>${{project.bid}}</p>
     <h4>Payment: </h4><p>{{project.payment}}</p>
     <h4>Completion Date: </h4><p>{{project.completionDate}}</p>
+    {{#link-to "project" project}} Update Project {{/link-to}}
   </div>
 {{/each}}
