@@ -1,5 +1,4 @@
 {{#if auth.isAuthenticated}}
-<h3>Add a new boat</h3>
 <form {{action 'createBoat' on='submit'}}>
   {{input placeholder='Name' value=newBoat.name}}
   {{input placeholder='Owner' value=newBoat.ownerName}}
@@ -9,6 +8,6 @@
   {{input placeholder='Type' value=newBoat.boatType}}
   {{input placeholder='Make & Model' value=newBoat.make}}
   {{input placeholder='Year Built' value=newBoat.year}}
-  <button type='submit'>Save</button>
+  <button class="myButton" type='submit'>Add New Boat</button>
 </form>
 {{/if}}

@@ -15,6 +15,11 @@ export default Ember.Route.extend({
       project.destroyRecord()
         .then(() => this.get('flashMessages').success('Project Successfully Deleted'))
         .catch(() => this.get('flashMessages').danger('Delete Failed'));
+    },
+    updateBoat(boat) {
+      boat.save()
+        .then(() => this.get('flashMessages').success('Boat Successfully Updated'))
+        .catch(() => this.get('flashMessages').danger('Update Failed'));
     }
   }
 });

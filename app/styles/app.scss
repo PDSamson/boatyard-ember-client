@@ -1,2 +1,91 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+a {
+  border-radius: 5px;
+  color: black;
+  margin: 10px auto;
+  padding: 1px;
+  text-decoration: none;
+  background-color: white;
+}
+
+body {
+  background-image: url(https://protiumdesign.com/wp-content/uploads/2017/02/Wave-Backgrounds-02.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+form {
+  background-color: #AAAAFE;
+  border-radius: 25px;
+  border: 3px solid black;
+  padding: 2%;
+  margin: 5%;
+}
+
+.banner {
+  background-image: url(https://thumbs.dreamstime.com/t/panoramic-ocean-sunset-panorama-sunrise-over-sea-light-clouds-over-sea-65774533.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Slabo 27px', serif;
+  font-size: 150px;
+  text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff;
+}
+
+.content {
+  text-align: center;
+  background-color: #3333FF;
+  border-radius: 25px;
+  border: 3px solid black;
+  color: #fff;
+}
+
+.content input {
+  width: 35%;
+  display: inline-block;
+}
+
+.icon {
+  float: left;
+}
+
+.item {
+  background-color: #AAAAFE;
+  border-radius: 25px;
+  border: 3px solid black;
+  color: black;
+  padding: 2% 2% 2% 5%;
+  margin: 5%;
+  text-align: left;
+}
+
+.myButton {
+  display: block;
+  margin: 10px auto;
+  color: black;
+}
+
+.navbar {
+  background-color: #AAAAFE;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.notLogged {
+    background-color: #3333FF;
+    border-radius: 25px;
+    border: 3px solid black;
+    color: #fff;
+    font-size: 30px;
+    padding: 2%;
+    text-align: center;
+}

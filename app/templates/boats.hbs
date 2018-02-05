@@ -1,12 +1,15 @@
-<h2>Boats</h2>
+<div class="content">
+<h1>Your Boats</h1>
 
 {{boat-form createBoat='createBoat'}}
 
 {{#each model as |boat|}}
-  <h3>Name: {{boat.name}}</h3>
-  <p>Type: {{boat.boatType}} Length: {{boat.length}} MakeAndModel: {{boat.make}} Year: {{boat.year}}</p>
-  <p>Owner:{{boat.ownerName}} Contact: {{boat.ownerPhone}}, {{boat.ownerEmail}}</p>
-  {{#link-to "boat" boat}} See Details {{/link-to}}
-  <button {{action "deleteBoat" boat}}>DELETE RECORD</button>
-  {{boat-edit-form boat=boat updateBoat='updateBoat'}}
+<div class="item">
+  <h3><b>Name:</b> {{boat.name}}</h3>
+  <p><b>Type:</b> {{boat.boatType}} <b>Length:</b> {{boat.length}} <b>MakeAndModel:</b> {{boat.make}} Year: {{boat.year}}</p>
+  <p><b>Owner:</b> {{boat.ownerName}} <b>Contact:</b> {{boat.ownerPhone}}, {{boat.ownerEmail}}</p>
+  {{#link-to "boat" boat class="btn"}} See Details {{/link-to}}
+  <button class="myButton" {{action "deleteBoat" boat}}>DELETE</button>
+</div>
 {{/each}}
+</div>

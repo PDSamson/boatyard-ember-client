@@ -1,3 +1,7 @@
+<div class="banner">
+  <img class="icon" src="https://cdn.iconscout.com/public/images/icon/premium/png-512/anchor-ship-boat-ocean-sea-travel-3a1ecd1c186cf304-512x512.png" width=13%>
+  <p>Boatyard</p>
+</div>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     {{navbar-header}}
@@ -5,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
-        <li>{{#link-to "users"}}Users{{/link-to}}</li>
+        <li>{{#link-to "boats"}}View Boats{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -21,17 +25,14 @@
   </div>
 </nav>
 
-<h1>Welcome to the Boatyard!</h1>
-
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
 
 <div class="col-md-8 col-md-offset-2">
 {{#if isAuthenticated}}
-  {{#link-to "boats"}}View Boats{{/link-to}}
   {{else}}
-  <p>Sign in to view boats</p>
+  <p class="notLogged">Sign in to view boats</p>
   {{/if}}
   {{outlet}}
 </div>
