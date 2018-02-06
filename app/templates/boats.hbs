@@ -6,7 +6,7 @@
 {{#each model as |boat|}}
 <div class="item">
   <h3><b>Name:</b> {{boat.name}}</h3>
-  <p><b>Type:</b> {{boat.boatType}} <b>Length:</b> {{boat.length}} <b>MakeAndModel:</b> {{boat.make}} Year: {{boat.year}}</p>
+  <p><b>Type:</b> {{boat.boatType}} <b>Length:</b> {{boat.length}} <b>MakeAndModel:</b> {{boat.make}} <b>Year:</b> {{boat.year}}</p>
   <p><b>Owner:</b> {{boat.ownerName}} <b>Contact:</b> {{boat.ownerPhone}}, {{boat.ownerEmail}}</p>
   {{#link-to "boat" boat class="btn"}} See Details {{/link-to}}
   <button class="myButton" {{action "deleteBoat" boat}}>DELETE</button>
